@@ -29,36 +29,71 @@ launch = ()->
 	#drop them
 	console.log
 
-	window.imgPath = ""
+	window.imgPaths = []
 
-	$(".loot").click ()->
-		$(this).toggleClass("reward")
+	# $(".loot").click ()->
+	# 	$(this).toggleClass("reward")
 
-	loadItemData = $.getJSON "http://query.yahooapis.com/v1/public/yql",
+	
+	items = []
+	items.push(loadItem(heavy[0]))
+	items.push(loadItem(heavy[2]))
+	items.push(loadItem(heavy[1]))
+	items.push(loadItem(heavy[3]))
+
+	# loadItemData.fail ()->
+	# 	console.error "loadItemData failed."
+
+	$.when.apply(this, items).done dataLoaded
+
+drop = ()->
+	console.log "drop"
+	itemTemplate = """
+	<div class="loot">
+			<div class="item"></div>
+			<div class="sparkles">
+				<div class="sparkle"></div>
+				<div class="sparkle"></div>
+				<div class="sparkle"></div>
+				<div class="sparkle"></div>
+				<div class="sparkle"></div>
+				<div class="sparkle"></div>
+				<div class="sparkle"></div>
+				<div class="sparkle"></div>
+			</div>
+		</div>
+	"""
+	
+	for item, index in window.imgPaths
+		itemE = $(itemTemplate)
+		$(".item",itemE).append("""<img src="#{window.imgPaths[index]}" />""")
+		# console.log item
+		$("#container").append(itemE)
+		itemE.click ()->
+			$(this).toggleClass("reward")
+	# $(".loot .item").append("""<img src="#{window.imgPaths[1]}" />""")
+
+dataLoaded = ()->
+	console.info "data loaded."
+	drop()
+
+loadItem = (hash)->
+	return $.getJSON "http://query.yahooapis.com/v1/public/yql",
 		{
-		q: "select * from json where url=\"http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/#{heavy[0]}/?fmt=JSON\"",
+		q: "select * from json where url=\"http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/#{hash}/?fmt=JSON\"",
 		format: "json"
 		},
 		(data)->		
 			if (data.query.results)
-				console.log "something"
+				# console.log "something"
 				# do something with
 				console.log data.query.results.json.Response.data.inventoryItem
-				window.imgPath = "http://www.bungie.net" + data.query.results.json.Response.data.inventoryItem.icon
+				window.imgPaths.push("http://www.bungie.net" + data.query.results.json.Response.data.inventoryItem.icon)
 				# data.query.results.json.name
 				# data.query.results.json.location
 			else
 				#nothing
 				console.log "nothing"
-
-	loadItemData.fail ()->
-		console.error "loadItemData failed."
-
-	$.when(loadItemData).done dataLoaded
-
-dataLoaded = ()->
-	console.info "data loaded."
-	$(".loot .item").append("""<img src="#{window.imgPath}" />""")
 
 $ ->
 	launch()
