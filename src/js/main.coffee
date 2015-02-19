@@ -18,25 +18,47 @@ launch = ()->
 	itemPath = "http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/#{heavy[0]}/"
 	loadItemData = {}
 
-	loadItemData = $.getJSON itemPath, (itemData)->
-		console.log itemData
+	# loadItemData = $.getJSON itemPath, (itemData)->
+	# 	console.log itemData
+	
+
+	# $.when(loadItemData).done dataLoaded
+
+	#load the images
+
+	#drop them
+	console.log
+
+	window.imgPath = ""
+
+	$(".loot").click ()->
+		$(this).toggleClass("reward")
+
+	loadItemData = $.getJSON "http://query.yahooapis.com/v1/public/yql",
+		{
+		q: "select * from json where url=\"http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/#{heavy[0]}/?fmt=JSON\"",
+		format: "json"
+		},
+		(data)->		
+			if (data.query.results)
+				console.log "something"
+				# do something with
+				console.log data.query.results.json.Response.data.inventoryItem
+				window.imgPath = "http://www.bungie.net" + data.query.results.json.Response.data.inventoryItem.icon
+				# data.query.results.json.name
+				# data.query.results.json.location
+			else
+				#nothing
+				console.log "nothing"
+
 	loadItemData.fail ()->
 		console.error "loadItemData failed."
 
 	$.when(loadItemData).done dataLoaded
 
-	#load the images
-
-	#drop them
-	console.log 
-
-	$(".loot").click ()->
-		$(this).toggleClass("reward")
-
 dataLoaded = ()->
 	console.info "data loaded."
+	$(".loot .item").append("""<img src="#{window.imgPath}" />""")
 
 $ ->
 	launch()
-
-	
