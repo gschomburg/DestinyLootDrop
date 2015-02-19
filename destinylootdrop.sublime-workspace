@@ -1,0 +1,681 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rgb",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"overflow",
+				"overflow"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"time",
+				"timeStart"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"pot",
+				"position"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"tube",
+				"tubeData"
+			],
+			[
+				"align",
+				"text-align"
+			],
+			[
+				"l",
+				"log	log"
+			],
+			[
+				"toggle",
+				"toggleClass"
+			],
+			[
+				"screen",
+				"screenHeight"
+			],
+			[
+				"overflo",
+				"overflow-y"
+			],
+			[
+				"translate",
+				"translateZ"
+			],
+			[
+				"transl",
+				"translateZ"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"parse",
+				"parseInt"
+			],
+			[
+				"scre",
+				"screenWidth"
+			],
+			[
+				"scree",
+				"screenId"
+			],
+			[
+				"scren",
+				"screenId"
+			],
+			[
+				"flip",
+				"flipboards"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"offse",
+				"offsetY"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"grid",
+				"gridRow"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"goto",
+				"gotoAndStop"
+			],
+			[
+				"copy_in",
+				"copy_intro"
+			],
+			[
+				"open",
+				"icon_opentable"
+			],
+			[
+				"offset",
+				"offsetX"
+			],
+			[
+				"pattern",
+				"patternCanvas"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"stand",
+				"standard-block-margin"
+			],
+			[
+				"small",
+				"small-block-margin"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 72,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"intal",
+				"Package Control: Install Package"
+			],
+			[
+				"inser",
+				"Insert Nums"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 319.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/gschomburg/Documents/Personal/htmls/DestinyLootDrop"
+	],
+	"file_history":
+	[
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/src/css/main.less",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/gulpfile.js",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/src/js/util.coffee",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/src/js/tube.coffee",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/src/js/tubecontrol.coffee",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/src/js/main.coffee",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/node_modules/gulp-less/node_modules/less/.idea/codeStyleSettings.xml",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/node_modules/coffeeify/node_modules/coffee-script/lib/coffee-script/coffee-script.js",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/node_modules/gulp-uglify/CHANGELOG.md",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/node_modules/gulp-less/node_modules/less/test/less/nested-gradient-with-svg-gradient/mixin-consumer.less",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/node_modules/gulp-less/node_modules/less/test/less/errors/svg-gradient1.less",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/node_modules/gulp-less/node_modules/less/gradlew",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/node_modules/gulp-livereload/node_modules/tiny-lr/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/src/index_old.html",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/src/css/style.css",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/src/js/tubetube.js",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/.gitignore",
+		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/package.json",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/database/css/main.less",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/database/signup/signup.php",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/todo.todo",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/database/signup/index.php",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/database/people/update.php",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_flipboard/index.html",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/database/people/add.php",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/database/people/index.php",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/database/index.php",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/database/signup/thankyou.php",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_flipboard/css/main.less",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_flipboard/js/hud.coffee",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_flipboard/js/app.coffee",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_flipboard/js/main.coffee",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_flipboard/js/flipboard.coffee",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_flipboard/js/settings.coffee",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_flipboard/js/show.coffee",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_flipboard/data/hero_data.json",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/gulpfile.js",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_flipboard/js/util.coffee",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_flipboard/data/people_data.json",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_tile/index.html",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_tile/css/main.less",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_tile/js/main.coffee",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/poc_grid/js/main.coffee",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/data/optum_tiletest_v1.json",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/js/main.coffee",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/index.html",
+		"/Users/gschomburg/Documents/Jobs/Optum/optum_mosaic/src/css/main.less",
+		"/Volumes/Tiled 0.10.2/README.md",
+		"/Library/Application Support/Apple/Mail/Stationery/Apple/Contents/Resources/Stationery/Contents/Resources/BNS Google Nexus.mailstationery/Contents/Resources/Description.plist",
+		"/Library/Application Support/Apple/Mail/Stationery/Apple/Contents/Resources/Stationery/Contents/Resources/BNS Google Nexus.mailstationery/Contents/Resources/content.html",
+		"/Library/Application Support/Apple/Mail/Stationery/Apple/Contents/Resources/Stationery/Contents/Resources/Sand Dollar.mailstationery/Contents/Resources/content.html",
+		"/Users/gschomburg/Documents/Jobs/BNSNewsletters/SimpleSpam/BNS Google Nexus.mailstationery/Contents/Resources/content.html",
+		"/Users/gschomburg/Documents/Jobs/BNSNewsletters/SimpleSpam/BNS Google Nexus.mailstationery/Contents/Resources/Description.plist",
+		"/Users/gschomburg/Documents/Jobs/BNSNewsletters/SimpleSpam/BNS Google Nexus.mailstationery/Contents/Resources/English.lproj/DisplayName.strings",
+		"/Users/gschomburg/Documents/Jobs/BNSNewsletters/SimpleSpam/Sand Dollar.mailstationery/Contents/Resources/content.html",
+		"/Users/gschomburg/Documents/Jobs/BNSNewsletters/SimpleSpam/Sand Dollar.mailstationery/Contents/Resources/en.lproj/DisplayName.strings",
+		"/Users/gschomburg/Documents/Jobs/BNSNewsletters/SimpleSpam/Sand Dollar.mailstationery/Contents/Resources/Description.plist",
+		"/Users/gschomburg/Documents/Jobs/BNSSites/templates/default_site/low_variables/default_site/content_about_people.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_10_10/cars_970x250_billboard/SimplePlayer.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_10_10/cars_970x250_billboard/kk_970x250_expanded.as",
+		"/Users/gschomburg/Documents/Jobs/AccentureOhare/dev/ResourcesLoadTest/Assets/config.xml",
+		"/Users/gschomburg/Documents/Jobs/AccentureOhare/dev/ResourcesLoadTest/Assets/levels.xml",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_10_02/cars_970x250_billboard/AppIcon.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_10_02/cars_970x250_billboard/kk_970x250_expanded.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_10_02/cars_970x250_billboard/SimplePlayer.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_10_02/cars_970x250_billboard/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_10_02/cars_970x250_billboard/kk_990x250_expanded.as",
+		"/Applications/Adobe Flash CS6/Common/Configuration/Players/FlashPlayer10_2.xml",
+		"/Applications/Adobe Flash CS6/Common/Configuration/Players/FlashPlayer11_2.xml",
+		"/Users/gschomburg/Documents/Jobs/BNSSites/templates/default_site/low_variables/default_site/content_contact.html",
+		"/Users/gschomburg/Documents/Jobs/BNSSites/src/styles/content.less",
+		"/Users/gschomburg/Documents/Jobs/Smirnoff/test/Halftoner.as",
+		"/Users/gschomburg/Documents/Jobs/Smirnoff/test/Dot.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_09/autotrader_990x250_billboard/AppIcon.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_09/autotrader_300x250_tabletMREC_facebook/html/fb.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_09/autotrader_300x250_tabletMREC_facebook/html/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_09/autotrader_300x250_tabletMREC_facebook/html/300x250_facebook.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/autotrader_300x250_tabletMREC_facebook/html/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/autotrader_300x250_tabletMREC_facebook/html/fb.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/autotrader_300x250_tabletMREC_facebook/html/300x250_facebook.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/autotrader_970x66_tabletbillboard/html/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/autotrader_970x66_tabletbillboard/html/970x66.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/kbb_970x66_tablet_collapsed/html/970x66.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/kbb_970x66_tablet_collapsed/html/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/autotrader_300x250_tabletMREC_facebook/html/style.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/kbb_970x200_tablet_expanded/970x200.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/kbb_970x200_tablet_expanded/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/facebook_300x250/facebook_300x250.fla",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_08/facebook_300x250/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_07/autotrader_990x250_billboard/kk_990x250_expanded.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_07/kbb_970x66_tablet_collapsed/html/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_07/kbb_970x66_tablet_collapsed/html/970x66.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_07/kbb_970x415_pushdown/kk_970x415_expanded.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_07/kbb_970x200_tablet_expanded/970x200.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_07/kbb_970x200_tablet_expanded/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_07/kbb_970x200_tablet_expanded/970x200.js",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_06/kbb_970x200_tablet_expanded/970x200.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_06/kbb_970x200_tablet_expanded/970x200.js",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_06/kbb_970x200_tablet_expanded/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_06/kbb_970x66_tablet_collapsed/html/970x66.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_06/kbb_970x66_tablet_collapsed/html/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_06/autotrader_990x250_billboard/kk_990x250_expanded.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_06/kbb_970x415_pushdown/kk_970x415_expanded.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_06/autotrader_990x250_billboard/AppIcon.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_06/kbb_970x200_tablet_expanded/expanded.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_06/kbb_970x415_pushdown/AppIcon.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/kbb_970x415_pushdown/AppIcon.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/kbb_970x415_pushdown/kk_970x415_expanded.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/kbb_970x200_tablet_expanded/expanded.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/kbb_970x200_tablet_expanded/970x200.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/kbb_970x200_tablet_expanded/970x200.js",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/autotrader_990x250_billboard/AppIcon.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/autotrader_990x250_billboard/kk_990x250_expanded.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/autotrader_300x250_tabletMREC_facebook/html/style.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/autotrader_300x250_tabletMREC_facebook/html/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/990x250_billboard/AppIcon.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/990x250_billboard/kk_990x250_expanded.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_05/990x250_billboard/kk_970x415_expanded.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_04/autotrader_300x250_tabletMREC_facebook/html/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_04/autotrader_300x250_tabletMREC_facebook/html/style.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_04/kbb_970x66_tablet_collapsed/html/index.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_04/kbb_970x66_tablet_collapsed/html/style.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_02/kbb_970x415_pushdown/AppIcon.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_02/kbb_970x415_pushdown/kk_970x415_expanded.as",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/templates:examples/flash/AOL_AS3_Pushdown_with_Skin_728x90/AOL_AS3_Pushdown_with_Skin_728x90_Collapsed.fla",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/templates:examples/html/DCRM_HTML5_Floating_Video_320x50/adhesion.css",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_02/kbb_970x200_html/expanded.html",
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_02/kbb_970x200_html/970x200.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"0",
+			".5",
+			"1px ",
+			":nth-child(1){\n// 	-webkit-transform: translate(0px, 800px);\n// }\n// .sparkle:nth-child(2){\n// 	-webkit-transform: translate(0px, -800px);\n// }\n// .sparkle:nth-child(3){\n// 	-webkit-transform: translate(800px, 0px);\n// }\n// .sparkle:nth-child(4){\n// 	-webkit-transform: translate(-800px, 0px);\n// }\n// .sparkle:nth-child(5){\n// 	-webkit-transform: translate(800px, 800px);\n// }\n// .sparkle:nth-child(6){\n// 	-webkit-transform: translate(-800px, 800px);\n// }\n// .sparkle:nth-child(7){\n// 	-webkit-transform: translate(800px, -800px);\n// }\n// .sparkle:nth-child(8){\n// 	-webkit-transform: translate(-800px, -800px);\n// }",
+			"200",
+			"play",
+			"loopCheck",
+			"loop",
+			"updateProperties",
+			"yt",
+			"800",
+			"reload",
+			"opacity",
+			"loop",
+			"checkboxer",
+			"squaredThree",
+			"c4c4c4",
+			"dddddd",
+			"loadVideo",
+			"load",
+			"data",
+			"@",
+			"playpauseToggle",
+			"this.player",
+			"data.@",
+			"@",
+			"input",
+			"logo",
+			"showHud",
+			"cursor",
+			"quoteBackground",
+			"quoteIntroBackground",
+			"util",
+			"	// perspective: 1000;",
+			"-webkit-perspective: 1000;",
+			" style=\"background-color:#{optumOrange}",
+			"stopCycling",
+			"hero_slide_two",
+			"quoteBackground",
+			"exports.optum",
+			"quoteIntroBackground",
+			"@quoteBackground",
+			"optum",
+			"\"#d6d7c8\"",
+			"\"#d84e25\"",
+			"\"#938f81\"",
+			"\"#d84e25\"",
+			"click",
+			"gapFix",
+			"removeJunkFromFlipboards",
+			"personSlideShowLength",
+			"preserve",
+			"backface",
+			"makePersonName",
+			"preserve-3d",
+			".0",
+			"2",
+			"{@localImagePath}",
+			"animat",
+			"short",
+			"heroFlipboardIndex",
+			"peopleBank",
+			"peopleBankIndex",
+			"peopleFlipboardIndex",
+			"force_slot",
+			"buildHeroBank",
+			"p.",
+			"p",
+			"HeroData",
+			"person",
+			"people",
+			"16",
+			"flipboards",
+			"top",
+			"c",
+			"aspect16x9",
+			"poeple",
+			"OPTUM_",
+			"OPTUM_1",
+			"quote-long",
+			".faces li",
+			".faces",
+			"russ",
+			"http://dev.bnslabs.com/dev/bnsmail/google_nexus/",
+			"156",
+			"63",
+			"185",
+			"\"740\"",
+			"padding-top",
+			">\n",
+			" <!-- icon displayed on track -->",
+			" <!-- badge displayed on opened item -->",
+			"videoPlayer",
+			"990",
+			"@-webkit-",
+			"@-webkit",
+			"-webkit-animation",
+			"@-webkit-",
+			"webkit",
+			"cubic-bezier(0.230, 0.640, 0.710, 1)",
+			"ease-out",
+			"appsStoppedDragging",
+			"cubic-bezier(0.230, 0.640, 0.710, 1)",
+			"28px",
+			"cubic-bezier(0.230, 0.640, 0.710, 1)",
+			"ease-out",
+			"150px",
+			"-200px",
+			".8",
+			"copy_learnMore",
+			"appsStoppedDragging",
+			"interactionTimer",
+			"266",
+			"appsStoppedDragging",
+			"tooltip",
+			"addChild",
+			"tooltip",
+			"toolti",
+			"copy_intro",
+			"disclaimerText_mc",
+			"disclaimer_mc",
+			"disclaimerText_mc",
+			"launchApp",
+			"135px",
+			"left",
+			"buildings",
+			"hills",
+			"left"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".gitignore",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 72,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "destinylootdrop.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"projects",
+				"templates/default_site/projects.group/_detail.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 361.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

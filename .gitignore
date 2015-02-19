@@ -1,0 +1,6 @@
+*/dist/*
+*/node_modules/*
+
+potatosauce.sublime-workspace
+.DS_Store
+*.log
