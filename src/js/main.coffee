@@ -8,6 +8,7 @@ launch = ()->
 	arms =[2927156752,4146057409,4132383826,2591213943,2335332317,78421062]
 	chest =[499191786,2272644374,1398023011,499191787,287395896,2272644375,1398023010]
 	legs =[104781337,921478195]
+	categories = [heavy, primary, special, head, arms, chest, legs]
 
 	console.log "elloo"
 
@@ -18,32 +19,28 @@ launch = ()->
 	itemPath = "http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/#{heavy[0]}/"
 	loadItemData = {}
 
-	# loadItemData = $.getJSON itemPath, (itemData)->
-	# 	console.log itemData
 	
-
-	# $.when(loadItemData).done dataLoaded
-
-	#load the images
-
-	#drop them
-	console.log
-
-	window.imgPaths = []
-
-	# $(".loot").click ()->
-	# 	$(this).toggleClass("reward")
-
+	# window.dropSound = document.createElement('audio')
+	# window.dropSound.setAttribute('src', 'lootTest.mp4')
+	# dropSound.setAttribute('autoplay', 'autoplay')
+	# $.get()
+	window.dropSound = new Howl({
+								urls:['lootTest.mp4'], 
+								sprite:{chunk:[0,1500]}
+								})
 	
 	items = []
-	items.push(loadItem(heavy[0]))
-	items.push(loadItem(heavy[2]))
-	items.push(loadItem(heavy[1]))
-	items.push(loadItem(heavy[3]))
 
-	# loadItemData.fail ()->
-	# 	console.error "loadItemData failed."
+	#choose number of items to drop
+	for[0...Math.random()*4]
+		#pick a random rarity?
 
+		#pick a random category
+		category = categories[Math.floor(Math.random()*categories.length)]
+		#pick a random item
+		items.push(loadItem(category[Math.floor(Math.random()*category.length)]))
+
+	window.imgPaths = []
 	$.when.apply(this, items).done dataLoaded
 
 drop = ()->
@@ -64,18 +61,36 @@ drop = ()->
 		</div>
 	"""
 	
+	t = 300
 	for item, index in window.imgPaths
 		itemE = $(itemTemplate)
 		$(".item",itemE).append("""<img src="#{window.imgPaths[index]}" />""")
 		# console.log item
-		$("#container").append(itemE)
+		$("#loot-container").append(itemE)
 		itemE.click ()->
 			$(this).toggleClass("reward")
+			window.dropSound.play()
+
+		do (itemE)->
+			after t, ()=>
+				console.log $(this)
+				itemE.toggleClass("reward")
+				# window.dropSound.play()
+				window.dropSound.play('chunk')
+		t += 120
 	# $(".loot .item").append("""<img src="#{window.imgPaths[1]}" />""")
+
+
+
+
+after = (t, f) ->
+	setTimeout f, t
 
 dataLoaded = ()->
 	console.info "data loaded."
 	drop()
+	# $(".loot").toggleClass("reward")
+	
 
 loadItem = (hash)->
 	return $.getJSON "http://query.yahooapis.com/v1/public/yql",

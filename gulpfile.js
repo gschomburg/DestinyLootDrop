@@ -42,7 +42,7 @@ gulp.task('less', function(){
 
 
 gulp.task('copy', function(){
-	return gulp.src(['./src/**/*.html', './src/**/*.php','./src/**/*.jpg', './src/**/*.png', './src/**/*.json','./src/**/*.css','./src/**/*.js', './src/**/*.map', './src/**/*.otf'])
+	return gulp.src(['./src/**/*.html', './src/**/*.php','./src/**/*.jpg', './src/**/*.png', './src/**/*.json','./src/**/*.css','./src/**/*.js', './src/**/*.map', './src/**/*.otf', './src/**/*.mp4'])
 	.pipe(gulp.dest('./dist/'))
 	.pipe(livereload());
 });
