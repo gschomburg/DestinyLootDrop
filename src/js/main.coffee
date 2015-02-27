@@ -1,5 +1,6 @@
 launch = ()->
-	window.baseurl = "http://localhost:8000/"
+	console.log("launch")
+	window.baseurl = "http://designergroupies.com/lootdrop/"
 	loadDependencies()
 	#load in the data all exotics... or just save the hashes locally
 	heavy =[3191797830,3191797831,3705198528,1274330687,1274330686]
@@ -11,7 +12,7 @@ launch = ()->
 	legs =[104781337,921478195]
 	window.categories = [heavy, primary, special, head, arms, chest, legs]
 
-	console.log "dropping"
+	# console.log "dropping"
 
 	
 	#pick some random exotics
@@ -23,8 +24,12 @@ launch = ()->
 	# 					urls:['lootTest.mp4'], 
 	# 					sprite:{chunk:[0,1500]}
 	# 					})
+
+
 	
 	loadDrop();
+reset = ()->
+	#reset all the values
 
 loadDependencies = ()->
 	cssId = "dropCss"
@@ -39,28 +44,42 @@ loadDependencies = ()->
 		head.appendChild(link);
 
 loadDrop = ()->
-	if $("#loot-container").length < 1
-		$("body").prepend("""<div id="loot-container"></div>""")
+	console.log
+	if !document.getElementById("loot-container")
+		container = document.createElement("div")
+		container.id = "loot-container"
+		document.body.appendChild(container);
 
 	items = []
-
+	window.imgPaths = []
 	#choose number of items to drop
-	for[0...Math.random()*4]
+	window.dropCount = Math.round(Math.random()*4)
+	for[0...window.dropCount]
 		#pick a random rarity?
 
 		#pick a random category
 		category = window.categories[Math.floor(Math.random()*window.categories.length)]
 		#pick a random item
-		items.push(loadItem(category[Math.floor(Math.random()*category.length)]))
+		# items.push(loadItem(category[Math.floor(Math.random()*category.length)]))
 
-	window.imgPaths = []
-	$.when.apply(this, items).done dataLoaded
+		loadItemData category[Math.floor(Math.random()*category.length)]
+
+	
+	# $.when.apply(this, items).done dataLoaded
 
 drop = ()->
 	console.log "drop"
-	itemTemplate = """
-	<div class="loot">
-			<div class="item"></div>
+	
+	t = 300
+	for item, index in window.imgPaths
+		# itemE = $(itemTemplate)
+		itemE = document.createElement("div")
+		itemE.classList.add "loot"
+		imgPath = window.imgPaths[index]
+		itemE.innerHTML = """
+			<div class="item">
+				<img src="#{imgPath}" />
+			</div>
 			<div class="sparkles">
 				<div class="sparkle"></div>
 				<div class="sparkle"></div>
@@ -71,56 +90,74 @@ drop = ()->
 				<div class="sparkle"></div>
 				<div class="sparkle"></div>
 			</div>
-		</div>
 	"""
-	
-	t = 300
-	for item, index in window.imgPaths
-		itemE = $(itemTemplate)
-		$(".item",itemE).append("""<img src="#{window.imgPaths[index]}" />""")
-		# console.log item
-		$("#loot-container").append(itemE)
-		itemE.click ()->
-			$(this).toggleClass("reward")
-			# window.dropSound.play()
+		document.getElementById("loot-container").appendChild itemE
 
 		do (itemE)->
 			after t, ()=>
-				console.log $(this)
-				itemE.toggleClass("reward")
-				# window.dropSound.play()
+				itemE.classList.add "reward"
 				# window.dropSound.play('chunk')
 		t += 120
-
-
-
 
 after = (t, f) ->
 	setTimeout f, t
 
-dataLoaded = ()->
-	console.info "data loaded."
-	drop()
+# dataLoaded = ()->
+# 	console.info "data loaded."
+# 	drop()
 	# $(".loot").toggleClass("reward")
 	
 
-loadItem = (hash)->
-	return $.getJSON "http://query.yahooapis.com/v1/public/yql",
-		{
-		q: "select * from json where url=\"http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/#{hash}/?fmt=JSON\"",
-		format: "json"
-		},
-		(data)->		
-			if (data.query.results)
-				# console.log "something"
-				# do something with
-				console.log data.query.results.json.Response.data.inventoryItem
-				window.imgPaths.push("http://www.bungie.net" + data.query.results.json.Response.data.inventoryItem.icon)
-				# data.query.results.json.name
-				# data.query.results.json.location
-			else
-				#nothing
-				console.log "nothing"
+# loadItem = (hash)->
+# 	return $.getJSON "http://query.yahooapis.com/v1/public/yql",
+# 		{
+# 		q: "select * from json where url=\"http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/#{hash}/?fmt=JSON\"",
+# 		format: "json"
+# 		},
+# 		(data)->		
+# 			if (data.query.results)
+# 				# console.log "something"
+# 				# do something with
+# 				console.log data.query.results.json.Response.data.inventoryItem
+# 				window.imgPaths.push("http://www.bungie.net" + data.query.results.json.Response.data.inventoryItem.icon)
+# 				# data.query.results.json.name
 
-$ ->
-	launch()
+# 				# data.query.results.json.location
+# 			else
+# 				#nothing
+# 				console.log "nothing"
+
+
+
+loadItemData = (hash)->
+	#http://query.yahooapis.com/v1/public/yql?q=select+*+from+json+where+url%3D%22http%3A%2F%2Fwww.bungie.net%2Fplatform%2FDestiny%2FManifest%2FInventoryItem%2F135862170%2F%3Ffmt%3DJSON%22&format=json
+	#http://query.yahooapis.com/v1/public/yql?q%3Dselect%20*%20from%20json%20whe…2FManifest%2FInventoryItem%2F3164616405%2F%3Ffmt%3DJSON%22%26format%3Djson
+
+	request = new XMLHttpRequest();
+	do (request)->
+		url = "http://query.yahooapis.com/v1/public/yql"
+		query = "?q=" + encodeURIComponent("select * from json where url=\"http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/#{hash}/?fmt=JSON\"") + "&format=json"
+		# console.log url+query
+		request.open('GET', url+query, true);
+		request.onload = ()->
+			if (request.status >= 200 && request.status < 400)
+				# console.log "success", JSON.parse(request.responseText)
+				# var data = JSON.parse(request.responseText);
+				window.imgPaths.push("http://www.bungie.net" + JSON.parse(request.responseText).query.results.json.Response.data.inventoryItem.icon)
+				if window.imgPaths.length >= window.dropCount
+					drop()
+			else
+				# console.error "load failed"
+
+		request.onerror = ()->
+			console.log "request.onerror"
+
+		request.send()
+
+console.log("main.js")
+# $ ->
+# 	launch()
+launch()
+
+#load main
+#load jquery

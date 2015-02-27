@@ -18,7 +18,7 @@ var rename = require('gulp-rename');
 // });
 
 gulp.task('browserify', function(){
-	return gulp.src('./src/**/js/main.coffee', {read: false})
+	return gulp.src('./src/**/js/*.coffee', {read: false})
 	.pipe(plumber())
 	.pipe( browserify({
 			debug: true,
