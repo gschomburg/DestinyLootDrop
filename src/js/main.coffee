@@ -174,14 +174,6 @@ class SoundFX
 		request = new XMLHttpRequest()
 		request.open('GET', @url, true);
 		request.responseType = 'arraybuffer';
-
-		# function loadDogSound(url) {
-		# var request = new XMLHttpRequest();
-		# request.open('GET', url, true);
-		# request.responseType = 'arraybuffer';
-
-		# // Decode asynchronously
-		# do(request)->
 		request.onload = ()=>
 				@context.decodeAudioData request.response, (buffer)=>
 						@soundBuffer = buffer
@@ -199,16 +191,15 @@ class SoundFX
 		source.connect(@context.destination)
 		source.start(0)
 
-	test:()->
-		# console.log 'ello'
-		try
-			# // Fix up for prefixing
-			window.AudioContext = window.AudioContext||window.webkitAudioContext;
-			context = new AudioContext();
-			# console.log 'try'
-		catch error
-			# console.log 'catch'
-			console.log "error setting up sound"
+	# test:()->
+	# 	try
+	# 		# // Fix up for prefixing
+	# 		window.AudioContext = window.AudioContext||window.webkitAudioContext;
+	# 		context = new AudioContext();
+	# 		# console.log 'try'
+	# 	catch error
+	# 		# console.log 'catch'
+	# 		console.log "error setting up sound"
 
 
 console.log("main.js")
