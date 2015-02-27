@@ -1,7 +1,12 @@
+
 launch = ()->
-	console.log("launch")
+	# console.log("launch")
 	window.baseurl = "http://designergroupies.com/lootdrop/"
 	loadDependencies()
+	
+	snd.test()
+	snd.load window.baseurl + "lootTest.mp4"
+
 	#load in the data all exotics... or just save the hashes locally
 	heavy =[3191797830,3191797831,3705198528,1274330687,1274330686]
 	primary =[119482464,119482466,2809229973,119482465,346443849,3164616407,3164616405,3164616404,135862170,135862171,3490486524,3490486525,1389842217,2681212685]
@@ -44,7 +49,6 @@ loadDependencies = ()->
 		head.appendChild(link);
 
 loadDrop = ()->
-	console.log
 	if !document.getElementById("loot-container")
 		container = document.createElement("div")
 		container.id = "loot-container"
@@ -53,7 +57,7 @@ loadDrop = ()->
 	items = []
 	window.imgPaths = []
 	#choose number of items to drop
-	window.dropCount = Math.round(Math.random()*4)
+	window.dropCount = Math.ceil(Math.random()*4)
 	for[0...window.dropCount]
 		#pick a random rarity?
 
@@ -97,6 +101,7 @@ drop = ()->
 			after t, ()=>
 				itemE.classList.add "reward"
 				# window.dropSound.play('chunk')
+				snd.play()
 		t += 120
 
 after = (t, f) ->
@@ -154,10 +159,65 @@ loadItemData = (hash)->
 
 		request.send()
 
+class SoundFX
+#audio junk
+
+	constructor:()->
+		@soundBuffer = null
+		@loaded=false
+		# // Fix up prefixing
+		window.AudioContext = window.AudioContext || window.webkitAudioContext
+		@context = new AudioContext()
+		console.log @context
+
+	load:(@url)->
+		request = new XMLHttpRequest()
+		request.open('GET', @url, true);
+		request.responseType = 'arraybuffer';
+
+		# function loadDogSound(url) {
+		# var request = new XMLHttpRequest();
+		# request.open('GET', url, true);
+		# request.responseType = 'arraybuffer';
+
+		# // Decode asynchronously
+		# do(request)->
+		request.onload = ()=>
+				@context.decodeAudioData request.response, (buffer)=>
+						@soundBuffer = buffer
+						@loaded=true
+						console.log "loaded sound", @
+						# @play()
+			request.send()
+
+	play:()->
+		if @loaded == false
+			return
+		# console.log "play @soundBuffer", @soundBuffer
+		source = @context.createBufferSource()
+		source.buffer = @soundBuffer
+		source.connect(@context.destination)
+		source.start(0)
+
+	test:()->
+		# console.log 'ello'
+		try
+			# // Fix up for prefixing
+			window.AudioContext = window.AudioContext||window.webkitAudioContext;
+			context = new AudioContext();
+			# console.log 'try'
+		catch error
+			# console.log 'catch'
+			console.log "error setting up sound"
+
+
 console.log("main.js")
 # $ ->
 # 	launch()
+snd = new SoundFX()
 launch()
+
+# snd.play()
 
 #load main
 #load jquery
