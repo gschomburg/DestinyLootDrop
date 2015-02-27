@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"imag",
+				"imgPaths"
+			],
+			[
+				"item",
+				"itemTemplate"
+			],
+			[
 				"rgb",
 				"rgba(r,g,b,a)"
 			],
@@ -204,10 +212,10 @@
 	"buffers":
 	[
 		{
-			"file": ".gitignore",
+			"file": "src/index.html",
 			"settings":
 			{
-				"buffer_size": 72,
+				"buffer_size": 379,
 				"line_ending": "Unix"
 			}
 		}
@@ -264,10 +272,18 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/gschomburg/Documents/Personal/htmls/DestinyLootDrop"
+		"/Users/gschomburg/Documents/Personal/htmls/DestinyLootDrop",
+		"/Users/gschomburg/Documents/Personal/htmls/DestinyLootDrop/src",
+		"/Users/gschomburg/Documents/Personal/htmls/DestinyLootDrop/src/css",
+		"/Users/gschomburg/Documents/Personal/htmls/DestinyLootDrop/src/js"
 	],
 	"file_history":
 	[
+		"/Users/gschomburg/Documents/Personal/htmls/DestinyLootDrop/src/css/loot.less",
+		"/Users/gschomburg/Documents/Personal/htmls/DestinyLootDrop/src/js/main.coffee",
+		"/Users/gschomburg/Documents/Personal/htmls/DestinyLootDrop/gulpfile.js",
+		"/Users/gschomburg/Documents/Personal/htmls/DestinyLootDrop/src/js/jsonp.js",
+		"/Users/gschomburg/Documents/Personal/htmls/DestinyLootDrop/.gitignore",
 		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/src/css/main.less",
 		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/gulpfile.js",
 		"/Users/gschomburg/Documents/Personal/htmls/potatosauce/tubetubetube/src/js/util.coffee",
@@ -390,16 +406,11 @@
 		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_04/autotrader_300x250_tabletMREC_facebook/html/style.css",
 		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_04/kbb_970x66_tablet_collapsed/html/index.html",
 		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_04/kbb_970x66_tablet_collapsed/html/style.css",
-		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_02/kbb_970x415_pushdown/AppIcon.as",
-		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_02/kbb_970x415_pushdown/kk_970x415_expanded.as",
-		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/templates:examples/flash/AOL_AS3_Pushdown_with_Skin_728x90/AOL_AS3_Pushdown_with_Skin_728x90_Collapsed.fla",
-		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/templates:examples/html/DCRM_HTML5_Floating_Video_320x50/adhesion.css",
-		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_02/kbb_970x200_html/expanded.html",
-		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_02/kbb_970x200_html/970x200.js"
+		"/Users/gschomburg/Documents/Jobs/ToyotaAppSuite/dev/2014_09_02/kbb_970x415_pushdown/AppIcon.as"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -413,6 +424,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"itemE",
 			"0",
 			".5",
 			"1px ",
@@ -539,8 +551,7 @@
 			"135px",
 			"left",
 			"buildings",
-			"hills",
-			"left"
+			"hills"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -563,24 +574,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": ".gitignore",
-					"semi_transient": true,
+					"file": "src/index.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 72,
+						"buffer_size": 379,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								299,
+								299
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

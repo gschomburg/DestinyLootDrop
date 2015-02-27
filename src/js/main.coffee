@@ -1,5 +1,6 @@
 launch = ()->
-
+	window.baseurl = "http://localhost:8000/"
+	loadDependencies()
 	#load in the data all exotics... or just save the hashes locally
 	heavy =[3191797830,3191797831,3705198528,1274330687,1274330686]
 	primary =[119482464,119482466,2809229973,119482465,346443849,3164616407,3164616405,3164616404,135862170,135862171,3490486524,3490486525,1389842217,2681212685]
@@ -8,27 +9,39 @@ launch = ()->
 	arms =[2927156752,4146057409,4132383826,2591213943,2335332317,78421062]
 	chest =[499191786,2272644374,1398023011,499191787,287395896,2272644375,1398023010]
 	legs =[104781337,921478195]
-	categories = [heavy, primary, special, head, arms, chest, legs]
+	window.categories = [heavy, primary, special, head, arms, chest, legs]
 
-	console.log "elloo"
+	console.log "dropping"
 
 	
 	#pick some random exotics
 
 	#load the data -- http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/4007228882/
-	itemPath = "http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/#{heavy[0]}/"
-	loadItemData = {}
+	# itemPath = "http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/#{heavy[0]}/"
+	
+	# window.dropSound = new Howl({
+	# 					urls:['lootTest.mp4'], 
+	# 					sprite:{chunk:[0,1500]}
+	# 					})
+	
+	loadDrop();
 
-	
-	# window.dropSound = document.createElement('audio')
-	# window.dropSound.setAttribute('src', 'lootTest.mp4')
-	# dropSound.setAttribute('autoplay', 'autoplay')
-	# $.get()
-	window.dropSound = new Howl({
-								urls:['lootTest.mp4'], 
-								sprite:{chunk:[0,1500]}
-								})
-	
+loadDependencies = ()->
+	cssId = "dropCss"
+	if !document.getElementById(cssId)
+		head = document.getElementsByTagName("head")[0]
+		link = document.createElement("link")
+		link.id = cssId
+		link.rel = "stylesheet"
+		link.type = "text/css";
+		link.href = window.baseurl + "css/loot.css"
+		link.media = "all";
+		head.appendChild(link);
+
+loadDrop = ()->
+	if $("#loot-container").length < 1
+		$("body").prepend("""<div id="loot-container"></div>""")
+
 	items = []
 
 	#choose number of items to drop
@@ -36,7 +49,7 @@ launch = ()->
 		#pick a random rarity?
 
 		#pick a random category
-		category = categories[Math.floor(Math.random()*categories.length)]
+		category = window.categories[Math.floor(Math.random()*window.categories.length)]
 		#pick a random item
 		items.push(loadItem(category[Math.floor(Math.random()*category.length)]))
 
@@ -69,16 +82,15 @@ drop = ()->
 		$("#loot-container").append(itemE)
 		itemE.click ()->
 			$(this).toggleClass("reward")
-			window.dropSound.play()
+			# window.dropSound.play()
 
 		do (itemE)->
 			after t, ()=>
 				console.log $(this)
 				itemE.toggleClass("reward")
 				# window.dropSound.play()
-				window.dropSound.play('chunk')
+				# window.dropSound.play('chunk')
 		t += 120
-	# $(".loot .item").append("""<img src="#{window.imgPaths[1]}" />""")
 
 
 
