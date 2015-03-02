@@ -1,10 +1,10 @@
 
 launch = ()->
 	# console.log("launch")
-	window.baseurl = "http://designergroupies.com/lootdrop/"
+	window.baseurl = "https://designergroupies.com/lootdrop/"
 	loadDependencies()
 	
-	snd.test()
+	# snd.test()
 	snd.load window.baseurl + "lootTest.mp4"
 
 	#load in the data all exotics... or just save the hashes locally
@@ -140,7 +140,7 @@ loadItemData = (hash)->
 
 	request = new XMLHttpRequest();
 	do (request)->
-		url = "http://query.yahooapis.com/v1/public/yql"
+		url = "https://query.yahooapis.com/v1/public/yql"
 		query = "?q=" + encodeURIComponent("select * from json where url=\"http://www.bungie.net/platform/Destiny/Manifest/InventoryItem/#{hash}/?fmt=JSON\"") + "&format=json"
 		# console.log url+query
 		request.open('GET', url+query, true);
